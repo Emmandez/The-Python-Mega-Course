@@ -13,7 +13,7 @@ we need to do the following: difflib.SequenceMatcher(paramethers)
 
 As we can see, that is a long way to call a method. to avoid this we use the
 following: from difflib import SequenceMatcher
-And in that way, we can call that method easily: SequenceMatcher(paramethers)
+And in that way, we can call that method easily: SequenceMatcher(paramethers) 
 '''
 
 
