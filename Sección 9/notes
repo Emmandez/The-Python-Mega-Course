@@ -1,0 +1,4 @@
+To install pandas we use this on CMD
+'pip install pandas'
+ we also have to install iptyhon
+ 'pip install ipython'
