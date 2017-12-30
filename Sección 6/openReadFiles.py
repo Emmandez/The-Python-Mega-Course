@@ -11,7 +11,7 @@ close() method on the file, in order to use it out of python.
 file.close()
 
 reading the file: we have to pass the content to a variable using the
-following syntaxis. Or we can use it directly by using the method instead
+following syntax. Or we can use it directly by using the method instead
 of saving the content in a variable
 
 content = file.read()
