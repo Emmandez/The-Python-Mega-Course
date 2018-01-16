@@ -5,8 +5,8 @@ video       = cv2.VideoCapture(0)
 backgrond   = None
 number      = 0
 status_list = [None,None] #To avoid out of range exception
-time        = [None,None] #To avoid out of range exception
-df = pandas.DataFrame(columns=["Start", "End"])
+times       = [None,None] #To avoid out of range exception
+df          = pandas.DataFrame(columns=["Start", "End"])
 while True:
     check, frame =video.read()
     status = 0
@@ -38,7 +38,7 @@ while True:
     status_list.append(status)
     if(status_list[-1] == 1 and status_list[-2]==0):
         times.append(datetime.now())
-    if(status_list[-1] == 0 and status_list[-2]==1)
+    if(status_list[-1] == 0 and status_list[-2]==1):
         times.append(datetime.now())
 
     #cv2.imshow("Gray frame",gray)
