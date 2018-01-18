@@ -5,8 +5,8 @@ video       = cv2.VideoCapture(0)
 backgrond   = None
 number      = 0
 status_list = [None,None] #To avoid out of range exception
-times       = [None,None] #To avoid out of range exception
-df          = pandas.DataFrame(columns=["Start", "End"])
+times       = [] #To avoid out of range exception
+df          = pandas.DataFrame(columns=["Start","End"])
 while True:
     check, frame =video.read()
     status = 0
@@ -57,7 +57,7 @@ while True:
 print(status_list)
 print(times)
 
-for i in range(0,len(status_list),2):
+for i in range(0,len(times),2):
     df = df.append({"Start":times[i], "End":times[i+1]}, ignore_index = True)
 
 #Exporting df to a csv file
